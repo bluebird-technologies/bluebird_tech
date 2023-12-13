@@ -1,19 +1,30 @@
-import { WhatWeDo } from './sections/WhatWeDo'
-import { OurTechStack } from './sections/OurTechStack'
-import { CaseStudies } from './sections/CaseStudies'
-import { ClientTestimonials } from './sections/ClientTestimonials'
-import { HowItStarted } from './sections/HowItStarted'
-import { OurPeople } from './sections/OurPeople'
-import { ContactUs } from './sections/ContactUs'
-import { Footer } from './sections/Footer'
-import { Intro } from './sections/Intro'
+import { WhatWeDo } from './_sections/WhatWeDo'
+import { OurTechStack } from './_sections/OurTechStack'
+import { CaseStudies } from './_sections/CaseStudies'
+import { ClientTestimonials } from './_sections/ClientTestimonials'
+import { HowItStarted } from './_sections/HowItStarted'
+import { OurPeople } from './_sections/OurPeople'
+import { ContactUs } from './_sections/ContactUs'
+import { Intro } from './_sections/Intro'
+import Script from 'next/script'
+import type { Metadata } from 'next'
 
-import { Header } from './Header'
+const title = 'Bluebird - Home'
 
-export default function Home() {
+export const metadata: Metadata = {
+    title,
+    twitter: {
+        title,
+    },
+    openGraph: {
+        title,
+    },
+}
+
+export default function HomePage() {
     return (
-        <main className="flex flex-col items-center w-full">
-            <Header />
+        <>
+            <Script src="https://web3forms.com/client/script.js" />
             <Intro />
             <WhatWeDo />
             <OurTechStack />
@@ -22,7 +33,6 @@ export default function Home() {
             <HowItStarted />
             <OurPeople />
             <ContactUs />
-            <Footer />
-        </main>
+        </>
     )
 }

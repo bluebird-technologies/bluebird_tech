@@ -2,103 +2,104 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    font-size: 16px;
-    @apply text-white;
-}
 html {
     @apply scroll-smooth;
 }
 
-.container {
-    @apply w-full max-w-[90%] xl:max-w-[1200px] 2xl:max-w-[1440px];
+body {
+    /* base size on which rem depends */
+    font-size: 16px;
+    font-family: var(--body);
+    @apply text-white overflow-x-hidden;
 }
 
-.pill-heading {
-    font-family: var(--heading);
-    background-image: linear-gradient(225deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.1));
-    @apply text-base leading-[22px] text-center font-light px-4 py-2.5 tracking-[0.5px];
+/**
+ * Buttons.
+ */
+.btn-primary {
+    @apply border border-white border-opacity-20 bg-secondary;
 }
-
-.heading-3 {
-    font-family: var(--heading);
-    @apply text-[20px] leading-[25px] tracking-[0.5px];
-    /* transform: scaleX(1.15); */
-}
-
-.heading-2 {
-    font-family: var(--heading);
-    @apply text-[35px] leading-[40px] lg:text-[42px] lg:leading-[48px] font-bold tracking-[0.5px];
-    /* transform: scaleX(1.15); */
-}
-
-h1 {
-    font-family: var(--heading);
-    @apply text-[40px] leading-[45px] lg:text-[50px] lg:leading-[55px] text-center font-bold max-w-3xl tracking-[0.5px];
-    /* transform: scaleX(1.15); */
-}
-
-p {
-    @apply text-base text-[rgba(255,255,255,0.7)] tracking-[0.5px] font-light;
-}
-
-.primary {
-    @apply border border-white border-opacity-20 bg-[#f3883c];
-}
-.primary:active {
+.btn-primary:active {
     @apply bg-opacity-80;
 }
 
-.secondary {
+.btn-secondary {
     @apply border border-white border-opacity-20 bg-white bg-opacity-5;
 }
-.secondary:hover {
+.btn-secondary:hover {
     @apply bg-opacity-10;
 }
-.secondary:focus-visible {
+.btn-secondary:focus-visible {
     @apply border-transparent;
 }
-.secondary:active {
+.btn-secondary:active {
     @apply bg-opacity-20;
-    /* rgba(34,52,83,0.3)] */
 }
 
-.tertiary {
-    /* @apply bg-[rgba(14,22,53,0.3)]; */
+.btn-tertiary {
 }
-.tertiary:hover {
-    @apply bg-[rgba(255,255,255,.1)];
+.btn-tertiary:hover {
+    @apply bg-black bg-opacity-10;
 }
-.tertiary:focus-visible {
+.btn-tertiary:focus-visible {
     @apply border-transparent;
 }
-.tertiary:active {
-    @apply bg-[rgba(255,255,255,.2)];
+.btn-tertiary:active {
+    @apply bg-black bg-opacity-20;
 }
 
-.tertiary,
-.secondary,
-.primary {
-    @apply text-base font-medium h-14 flex items-center px-6 transition duration-500 hover:duration-300 justify-center;
+.btn-tertiary,
+.btn-secondary,
+.btn-primary {
+    @apply text-base font-medium min-h-[56px] py-1 flex items-center px-6 transition
+        duration-500 hover:duration-300 justify-center space-x-1.5;
 }
-.tertiary:hover,
-.secondary:hover,
-.primary:hover {
+.btn-tertiary:hover,
+.btn-secondary:hover,
+.btn-primary:hover {
     transform: translateY(-2px);
 }
-.tertiary:focus-visible,
-.secondary:focus-visible,
-.primary:focus-visible {
+.btn-tertiary:focus-visible,
+.btn-secondary:focus-visible,
+.btn-primary:focus-visible {
     @apply outline outline-1 outline-white outline-offset-1 rounded-sm;
 }
 
-header {
-    @apply py-5 px-8 flex items-center justify-between bg-[rgba(14,22,53,0.4)] fixed top-0 left-0 right-0 backdrop-blur-xl;
+/* .container {
+    @apply px-5;
+} */
+.container {
+    @apply w-full max-w-[90%] xl:max-w-[80%] 2xl:max-w-screen-xl;
 }
-header li a {
-    @apply text-[rgba(255,255,255,.6)] tracking-[0.5px] font-medium p-4
-  cursor-pointer
-  hover:text-white;
+
+/**
+ * The small pre-title above headings.
+ */
+.pill-heading {
+    font-family: var(--heading);
+    background-image: linear-gradient(225deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.1));
+    @apply text-base text-center font-light px-4 py-2.5;
+}
+
+/**
+ * Generic card
+ */
+.card {
+    @apply border border-white border-opacity-10 backdrop-blur-md bg-primary bg-opacity-40;
+}
+
+h1 {
+    @apply text-4xl leading-[45px] lg:text-5xl text-center font-bold max-w-3xl;
+}
+h2 {
+    @apply text-[35px] leading-[40px] lg:text-[42px] lg:leading-[48px] font-bold;
+}
+h3 {
+    @apply text-2xl lg:text-3xl font-bold;
+}
+
+p {
+    @apply text-base text-white text-opacity-70 tracking-[0.5px] font-light;
 }
 
 h1,
@@ -108,12 +109,15 @@ h4,
 h5,
 h6 {
     font-family: var(--heading);
-    @apply tracking-[0.5px];
+    @apply tracking-[0.5px] leading-[1.15];
 }
 
 textarea,
 input {
-    @apply px-6 py-4 border border-white border-opacity-20 bg-transparent outline-none focus:border-opacity-50 text-base w-full text-white placeholder:text-opacity-40 placeholder:text-white placeholder:font-light block;
+    @apply px-6 py-4 border border-white border-opacity-20 bg-transparent
+        outline-none text-base w-full text-white block
+        focus:border-opacity-50
+        placeholder:text-white placeholder:font-light placeholder:text-opacity-40;
 }
 input {
     @apply h-16;
@@ -125,33 +129,57 @@ textarea {
     background: #f3883c;
 }
 
-/* .slide {
-    opacity: 0;
-    transition-duration: 1s ease;
-    transition-property: opacity, transform;
-    transition: all 0.5s ease-in-out;
-}
-.slide.slide-left {
-    transform: translateX(-50px);
+/**
+ * Slide
+ */
+@media screen and (min-width: 1024px) {
+    .fade {
+        opacity: 0;
+        transition-duration: 1s ease;
+        transition-property: opacity, transform;
+        transition: all 0.5s ease-in-out;
+    }
+    .fade.active {
+        opacity: 1;
+        transform: translateX(0px) translateY(0px) !important;
+    }
+
+    .fade.fade-left {
+        transform: translateX(-50px);
+    }
+    .fade.fade-down {
+        transform: translateY(-50px);
+    }
+    .fade.fade-up {
+        transform: translateY(50px);
+    }
+    .fade.fade-right {
+        transform: translateX(50px);
+    }
 }
 
-.slide.slide-down {
-    transform: translateY(-50px);
+.privacy-policy p,
+.privacy-policy li {
+    margin: 16px 0;
 }
 
-.slide.slide-up {
-    transform: translateY(50px);
+.tos {
+    @apply -mt-12;
 }
-.slide.slide-right {
-    transform: translateX(50px);
+.tos p,
+.tos li {
+    margin: 16px 0;
 }
-
-.slide.active {
-    opacity: 1;
-    transform: translateX(0px) translateY(0px);
-} */
-
-/* .slide-down.active {
-    opacity: 1;
-    transform: translateY(0px);
-} */
+.tos h1 {
+    @apply text-left;
+}
+.tos h1,
+.tos h2 {
+    @apply mt-12;
+}
+.tos ul {
+    @apply list-disc pl-6;
+}
+.tos ul ul {
+    list-style-type: circle;
+}

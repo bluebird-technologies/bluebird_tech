@@ -3,7 +3,7 @@
     "version": "0.1.0",
     "private": true,
     "engine": {
-        "node": "x20"
+        "node": "x18"
     },
     "scripts": {
         "dev": "next dev",
@@ -12,15 +12,15 @@
         "lint": "next lint"
     },
     "dependencies": {
-        "@heroicons/react": "^2.0.18",
-        "clsx": "^2.0.0",
+        "@heroicons/react": "latest",
+        "clsx": "latest",
         "next": "latest",
         "react": "latest",
         "react-dom": "latest",
-        "react-fast-marquee": "^1.6.1"
+        "react-fast-marquee": "latest"
     },
     "devDependencies": {
-        "@next/bundle-analyzer": "^13.5.3",
+        "@next/bundle-analyzer": "latest",
         "@types/node": "latest",
         "@types/react": "latest",
         "@types/react-dom": "latest",
@@ -34,6 +34,7 @@
         "eslint-plugin-prettier": "latest",
         "postcss": "latest",
         "prettier": "latest",
+        "sass": "latest",
         "tailwindcss": "latest",
         "typescript": "latest"
     }
