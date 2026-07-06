@@ -123,11 +123,12 @@ export function OurTechStack() {
             <div className="flex flex-col items-start space-y-8 lg:flex-1 min-w-0">
                 <h3 className="pill-heading fade fade-right">Our Tech Stack</h3>
                 <h2 className="fade fade-right">
-                    Bluebird is your new <em>Technology Partner</em>
+                    Modern Tools, <em>Proven Foundations</em>
                 </h2>
                 <p className="text-left fade fade-right">
-                    At Bluebird we leverage a cutting-edge and versatile tech stack, incorporating
-                    modern technologies while embracing proven frameworks and tools.
+                    We pick technology that will still serve you in five years, and we bring our own
+                    battle-tested boilerplates and architecture patterns to every project - so
+                    builds start at speed instead of from scratch.
                 </p>
             </div>
         </section>

@@ -21,37 +21,35 @@ export function HowItStarted() {
                 <h2 className=" pt-8 fade fade-right">How it all started</h2>
                 <div className="pt-4">
                     <p className="text-white font-normal fade fade-right">
-                        At Bluebird Technologies, we are on a simple mission: to build timeless,
-                        boutique software that endures beyond us. We work across industry,
-                        partnering with corporates and founders alike.
+                        At Bluebird Technologies, we are on a simple mission: to build software that
+                        endures beyond us. We work across industries, partnering with corporates and
+                        founders alike.
                         <br />
                         <br />
                     </p>
                     <p className="fade fade-right">
-                        In 2018, the Bluebird brand took flight with our three founding members and
-                        a boatload of ambition. Today, our company is made up of a multi-national
-                        team working asynchronously from several global cities, and across
-                        timezones. Over time, Bluebird has built a professional network of skilled
-                        technologists whose shared dedication to Bluebird’s goals and values unites
-                        us all across time and geography. <br />
+                        In 2018, Bluebird took flight with three founding members and a boatload of
+                        ambition. Today, we are a multi-national team of senior engineers working
+                        across cities and timezones - startup founders, global adventurers, and
+                        contributors to well-known software systems around the world. What unites us
+                        is a shared conviction: software should last. <br />
                         <br />
-                        We are proud to say that the Bluebird team carries the badges of startup
-                        founders, global adventurers and contributors to renowned software systems
-                        around the world. We are brought together by our passion for building
-                        software that really lasts; our company is all about endurance over
-                        innovation-for-innovation-sake. <br />
+                        The tools have changed since 2018, and we changed with them. We adopted AI
+                        tooling early, and it has made us significantly faster and more
+                        cost-effective. But AI makes experienced engineers faster - it does not
+                        replace the judgment that keeps software secure, maintainable, and worth
+                        betting a business on. That judgment, and the battle-tested foundations we
+                        bring to every project, are still ours. <br />
                         <br />
-                        Bluebird works around our clients’ needs, adapting to tech stacks and
-                        evolving our skillset as we go. The way we approach each of our clients’
-                        challenges is bespoke - we do not believe in plug-and-play solutions to big
-                        world problems. Targeted, unique and distinctive is our way. We strike the
-                        perfect balance between leveraging modern technologies and staying ahead of
-                        the curve, while deeply honouring time-tested methodologies. <br />
+                        We do not believe in plug-and-play answers to hard problems. Every
+                        engagement starts with understanding your business, and every build stands
+                        on foundations we have proven in production: deployment pipelines, secrets
+                        management, monitoring, and proper data modelling from the first commit.{' '}
                         <br />
-                        For us, success is longevity and endurance. We do the tech equivalent of
-                        timeless classics, instead of whizz-pow ‘fast fashion’. As custodians of
-                        tomorrow’s software, we take enormous pride in crafting solutions that
-                        embody simplicity, power, sustainability and beauty.
+                        <br />
+                        For us, success is longevity. We ship it, we stand behind it, and it still
+                        works years later. That is the standard we hold ourselves to on every
+                        project.
                     </p>
                     <div className="mt-8 flex">
                         <Link className="btn-primary fade fade-right" href="/#contact-us">

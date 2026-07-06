@@ -26,8 +26,8 @@ const caseStudy: CaseStudy = {
     intro: {
         heading: (
             <>
-                South Africa’s leading infrastructure development and construction materials supply
-                groups
+                One of South Africa’s leading infrastructure development and construction materials
+                supply groups
             </>
         ),
         description: (

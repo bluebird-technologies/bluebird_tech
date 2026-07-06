@@ -14,7 +14,8 @@ export function Footer() {
                         <Image src={logo} alt="logo" width={210} />
                     </Link>
                     <h5 className="text-xl max-w-xs">
-                        Building Innovative Software with Style and Simplicity
+                        Senior engineers building production-grade software - faster with AI,
+                        accountable for the long run.
                     </h5>
                 </div>
                 <div className="col-span-1">
@@ -75,7 +76,7 @@ export function Footer() {
                 </div>
             </div>
             <div className="py-8 border-t border-t-white border-opacity-20 flex flex-col gap-4 md:flex-row justify-between">
-                <span>Copyright © Bluebird Technologies 2023 | All rights reserved</span>
+                <span>Copyright © Bluebird Technologies 2026 | All rights reserved</span>
                 <div className="flex items-center gap-3">
                     <Link
                         href={`/privacy-policy`}

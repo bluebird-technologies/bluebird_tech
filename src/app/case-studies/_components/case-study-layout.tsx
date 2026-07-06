@@ -56,7 +56,7 @@ export function CaseStudyLayout({
         <div className="container pt-8 lg:pt-28 pb-24 lg:pb-32 space-y-24 lg:space-y-36">
             <section className="flex flex-col lg:flex-row gap-20">
                 <div className="lg:w-1/2 text-left flex flex-col items-start gap-y-8">
-                    <h3 className="pill-heading fade fade-left">Client Testimonials</h3>
+                    <h3 className="pill-heading fade fade-left">Case Study</h3>
                     <h2 className="fade fade-left">{intro.heading}</h2>
                     <p>{intro.description}</p>
                     <h3 className="pt-4">Services We Offered {name}</h3>

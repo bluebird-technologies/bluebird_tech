@@ -42,7 +42,7 @@ const blocks = [
         title: 'Co-founder, Scriptex',
         icon: alex,
         testimonial:
-            'Our company has worked with Bluebird on several occasions and it’s been great working with such adedicated and well skilled team. Their ability to correctly understand client requirements andtimeously deliver upon them using the right tech-fit is one of their greatest attributes.',
+            'Our company has worked with Bluebird on several occasions and it’s been great working with such a dedicated and well skilled team. Their ability to correctly understand client requirements and timeously deliver upon them using the right tech-fit is one of their greatest attributes.',
     },
 ]
 

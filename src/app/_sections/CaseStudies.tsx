@@ -48,8 +48,8 @@ export function CaseStudies() {
                     </h2>
                 </div>
                 <p className="h-full flex flex-col justify-end text-left fade fade-right">
-                    This work showcases our expertise in developing tailored software solutions that
-                    address complex challenges and deliver measurable results for our clients.
+                    Real projects, real outcomes. Here’s how we’ve helped clients replace systems
+                    that were holding them back and ship platforms their businesses now run on.
                 </p>
             </div>
             <div className="gap-5 flex flex-col lg:flex-row pt-20">
