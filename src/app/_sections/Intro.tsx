@@ -44,12 +44,7 @@ export function Intro() {
                     <>
                         <Link className="btn-primary" href="/quote-calculator">
                             <span>Quote Calculator</span>
-                            <Image
-                                src={calculator}
-                                height={20}
-                                width={20}
-                                alt="Picture of the author"
-                            />
+                            <Image src={calculator} height={20} width={20} alt="" />
                         </Link>
                         <a className="btn-secondary" href="#what-we-do">
                             What We Do
@@ -65,7 +60,7 @@ export function Intro() {
                         <a href="https://22seven.com" target="_blank">
                             <Image src={seven} height={20} alt="22seven" />
                         </a>
-                        <a href="https://bank.tech" target="_blank" className="mb-[1px]">
+                        <a href="https://bank.tech" target="_blank" className="mb-px">
                             <Image src={banktech} height={20} alt="BankTech" />
                         </a>
                         <a href="https://bvnk.com" target="_blank">
@@ -98,7 +93,7 @@ export function Intro() {
                         <a href="https://www.tweakcarbon.com/" target="_blank" className="mb-[2px]">
                             <Image src={tweak} height={32} alt="tweak" />
                         </a>
-                        <a href="https://www.raubex.com/" target="_blank" className="mb-[1px]">
+                        <a href="https://www.raubex.com/" target="_blank" className="mb-px">
                             <Image src={raubex} height={44} alt="Raubex" />
                         </a>
                         <a href="https://oystar-africa.com/" target="_blank">

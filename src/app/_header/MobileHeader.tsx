@@ -18,10 +18,10 @@ export function MobileHeader() {
         <div className="block lg:hidden">
             <div
                 className={clsx(
-                    'fixed left-0 right-0 h-screen bg-[rgba(14,22,53)] transition z-10',
+                    'fixed left-0 right-0 h-screen transition z-10',
                     {
-                        'bg-opacity-90': isOpen,
-                        'bg-opacity-0 pointer-events-none': !isOpen,
+                        'bg-[rgba(14,22,53,0.9)]': isOpen,
+                        'bg-transparent pointer-events-none': !isOpen,
                     },
                 )}
                 style={{
@@ -29,7 +29,7 @@ export function MobileHeader() {
                 }}
             >
                 <div
-                    className=" absolute top-[20px] left-[20px] right-[20px] bg-[rgba(14,22,53,.3)] transition-all duration-500 backdrop-blur-md pt-2.5 px-5 pb-8 border border-white border-opacity-20"
+                    className=" absolute top-[20px] left-[20px] right-[20px] bg-[rgba(14,22,53,.3)] transition-all duration-500 backdrop-blur-md pt-2.5 px-5 pb-8 border border-white/20"
                     style={{
                         // full height - header height - 20px padding
                         marginTop: isOpen ? 0 : 'calc(-100vh - 96px)',
@@ -54,12 +54,7 @@ export function MobileHeader() {
                                 onClick={() => setOpen(false)}
                             >
                                 Quote Calculator
-                                <Image
-                                    src={calculator}
-                                    height={20}
-                                    width={20}
-                                    alt="Picture of the author"
-                                />
+                                <Image src={calculator} height={20} width={20} alt="" />
                             </Link>
                         </li>
                         <li>
@@ -76,11 +71,11 @@ export function MobileHeader() {
             </div>
             <button
                 className={`
-                    h-14 w-14 border border-white border-opacity-20 bg-white bg-opacity-5 flex items-center justify-center
-                    hover:bg-opacity-10
+                    h-14 w-14 border border-white/20 bg-white/5 flex items-center justify-center
+                    hover:bg-white/10
                     focus-visible:border-transparent
-                    active:bg-opacity-20
-                    fixed top-0 right-0 mt-5 mr-8 z-[101]
+                    active:bg-white/20
+                    fixed top-0 right-0 mt-5 mr-8 z-101
                 `}
                 onClick={() => setOpen(!isOpen)}
             >

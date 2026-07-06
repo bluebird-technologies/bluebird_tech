@@ -64,7 +64,7 @@ export function CaseStudyLayout({
                         {intro.servicesOffered.map((service, i) => (
                             <li
                                 key={i}
-                                className="p-4 border border-white border-opacity-20 bg-white bg-opacity-10 backdrop-blur-lg"
+                                className="p-4 border border-white/20 bg-white/10 backdrop-blur-lg"
                             >
                                 {service}
                             </li>
@@ -104,7 +104,7 @@ export function CaseStudyLayout({
                     <h3>What we needed to know</h3>
                     <ul className="space-y-5 text-left flex flex-col items-start">
                         {approach.whatWeNeededToKnow.map((item, i) => (
-                            <li className="bg-white bg-opacity-10 p-4 text-sm inline-block" key={i}>
+                            <li className="bg-white/10 p-4 text-sm inline-block" key={i}>
                                 {item}
                             </li>
                         ))}
@@ -117,7 +117,7 @@ export function CaseStudyLayout({
                         <ul className="space-y-5 text-left">
                             {approach.howWeUncoveredThisInformation.map((item, i) => (
                                 <li
-                                    className="bg-white bg-opacity-10 p-4 text-sm inline-block"
+                                    className="bg-white/10 p-4 text-sm inline-block"
                                     key={i}
                                 >
                                     {item}
@@ -152,7 +152,7 @@ export function CaseStudyLayout({
                         <ul className="space-y-5 text-left">
                             {process.design.map((item, i) => (
                                 <li
-                                    className="bg-white bg-opacity-10 p-4 text-sm inline-block"
+                                    className="bg-white/10 p-4 text-sm inline-block"
                                     key={i}
                                 >
                                     {item}
@@ -188,7 +188,7 @@ export function CaseStudyLayout({
                         <ul className="space-y-5 text-left">
                             {process.build.map((item, i) => (
                                 <li
-                                    className="bg-white bg-opacity-10 p-4 text-sm inline-block"
+                                    className="bg-white/10 p-4 text-sm inline-block"
                                     key={i}
                                 >
                                     {item}
@@ -205,7 +205,7 @@ export function CaseStudyLayout({
                     <h3 className="pill-heading">{achieved.heading}</h3>
                 </div>
                 <div className="card p-6">
-                    <ul className="list-disc pl-6 text-sm text-opacity-60 space-y-2">
+                    <ul className="list-disc pl-6 text-sm space-y-2">
                         {achieved.list.map((item, i) => (
                             <li key={i}>{item}</li>
                         ))}

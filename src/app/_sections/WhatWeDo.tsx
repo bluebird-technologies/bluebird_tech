@@ -83,7 +83,7 @@ export function WhatWeDo() {
                         key={card.title}
                     >
                         <div className="h-full card p-6">
-                            <div className="h-12 w-12 border border-white border-opacity-10 bg-white bg-opacity-10 flex items-center justify-center">
+                            <div className="h-12 w-12 border border-white/10 bg-white/10 flex items-center justify-center">
                                 <Image src={card.icon} height={28} width={28} alt={card.title} />
                             </div>
                             <h2 className="text-[20px] leading-[25px] font-bold pt-8">

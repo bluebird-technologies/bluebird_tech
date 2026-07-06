@@ -57,7 +57,7 @@ export default function ResourcePage() {
     return (
         <Modal closeLink="/quote-calculator" title="Rate Card">
             <div className="">
-                <div className="border-b border-white border-opacity-10 text-xl font-bold py-4 flex flex-col md:flex-row">
+                <div className="border-b border-white/10 text-xl font-bold py-4 flex flex-col md:flex-row">
                     <div className="flex-1 font-thin md:font-bold">Talent</div>
                     <div className="flex-1 md:text-right">Hourly Rate ({userCurrency})</div>
                 </div>

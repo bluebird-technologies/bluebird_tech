@@ -39,12 +39,7 @@ export default function QuoteCalculatorLayout({ children }: { children: React.Re
                     <>
                         <Link className="btn-primary" href="/build-a-platform">
                             <span>Build a Platform</span>
-                            <Image
-                                src={calculator}
-                                height={20}
-                                width={20}
-                                alt="Picture of the author"
-                            />
+                            <Image src={calculator} height={20} width={20} alt="" />
                         </Link>
                         <Link
                             className="btn-secondary"

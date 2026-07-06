@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
             userAgent: '*',
             allow: '/',
         },
-        // sitemap: 'https://bluebird.tech/sitemap.xml',
+        sitemap: 'https://bluebird.tech/sitemap.xml',
     }
 }

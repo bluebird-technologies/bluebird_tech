@@ -56,7 +56,7 @@ export function ContactUs({ quote }: { quote: string }) {
                             </div>
                         </form>
                     ) : (
-                        <div className="border border-white border-opacity-20 p-7 flex space-x-5 bg-white bg-opacity-5">
+                        <div className="border border-white/20 p-7 flex space-x-5 bg-white/5">
                             <Image src={check} alt="check" />
                             <div className="space-y-1">
                                 <div className="text-lg font-bold">Thank you</div>

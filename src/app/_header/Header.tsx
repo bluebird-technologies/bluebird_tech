@@ -13,21 +13,21 @@ export function Header() {
     return (
         <>
             <header
-                className="lg:flex z-[101] justify-between lg:justify-between fade fade-down py-5 px-8 flex items-center bg-primary bg-opacity-60
+                className="lg:flex z-101 justify-between lg:justify-between fade fade-down py-5 px-8 flex items-center bg-primary/60
                 sticky top-0 left-0 right-0 backdrop-blur-xl"
                 style={{
                     height: HEADER_HEIGHT,
                 }}
             >
                 <Link className="hover:scale-90 transition" href="/">
-                    <Image src={logo} width={168} alt="Picture of the author" />
+                    <Image src={logo} width={168} alt="Bluebird Technologies" />
                 </Link>
                 <ol className="hidden lg:flex">
                     {headerLinks.map((section) => (
                         <li key={section.id}>
                             <Link
                                 href={`/#${section.id}`}
-                                className="text-white text-center text-opacity-60 font-medium p-4 cursor-pointer hover:text-opacity-100 transition"
+                                className="text-white/60 text-center font-medium p-4 cursor-pointer hover:text-white transition"
                             >
                                 {section.label}
                             </Link>
@@ -37,12 +37,7 @@ export function Header() {
                 <div className="hidden lg:flex items-center space-x-4">
                     <Link className="btn-tertiary" href="/quote-calculator">
                         <span>Quote Calculator</span>
-                        <Image
-                            src={calculator}
-                            height={20}
-                            width={20}
-                            alt="Picture of the author"
-                        />
+                        <Image src={calculator} height={20} width={20} alt="" />
                     </Link>
                     <Link className="btn-primary" href="/#contact-us">
                         Contact us

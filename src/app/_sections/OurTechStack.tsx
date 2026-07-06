@@ -108,7 +108,7 @@ export function OurTechStack() {
                         {rows.map((item) => (
                             <div
                                 key={item.name}
-                                className="bg-black bg-opacity-10 h-[70px] w-[125px] flex items-center justify-center py-2.5 px-5 rounded-lg mx-2.5"
+                                className="bg-black/10 h-[70px] w-[125px] flex items-center justify-center py-2.5 px-5 rounded-lg mx-2.5"
                             >
                                 <Image
                                     src={item.icon}

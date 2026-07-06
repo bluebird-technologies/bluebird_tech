@@ -25,7 +25,7 @@ export function Footer() {
                             <li key={headerLink.id}>
                                 <Link
                                     href={`/#${headerLink.id}`}
-                                    className="hover:text-opacity-100 text-white text-opacity-60"
+                                    className="text-white/60 hover:text-white"
                                 >
                                     {headerLink.label}
                                 </Link>
@@ -36,17 +36,17 @@ export function Footer() {
                 <div className="col-span-2">
                     <h5 className="text-2xl">Contact Us</h5>
                     <ol className="text-white text-sm space-y-4 mt-8">
-                        <li className="flex border border-white border-opacity-10 px-5 py-4 space-x-4">
+                        <li className="flex border border-white/10 px-5 py-4 space-x-4">
                             <Image src={email} alt="email" />
                             <div>
-                                <div className="text-opacity-60 text-white mb-1">Email</div>
+                                <div className="text-white/60 mb-1">Email</div>
                                 <div>info@bluebird.tech</div>
                             </div>
                         </li>
-                        <li className="flex border border-white border-opacity-10 px-5 py-4 space-x-4">
+                        <li className="flex border border-white/10 px-5 py-4 space-x-4">
                             <Image src={location} alt="location" />
                             <div>
-                                <div className="text-opacity-60 text-white mb-1">
+                                <div className="text-white/60 mb-1">
                                     Address - U.S.A.
                                 </div>
                                 <div>
@@ -54,19 +54,19 @@ export function Footer() {
                                 </div>
                             </div>
                         </li>
-                        <li className="flex border border-white border-opacity-10 px-5 py-4 space-x-4">
+                        <li className="flex border border-white/10 px-5 py-4 space-x-4">
                             <Image src={location} alt="location" />
                             <div>
-                                <div className="text-opacity-60 text-white mb-1">
+                                <div className="text-white/60 mb-1">
                                     Address - South Africa
                                 </div>
                                 <div>33 Ballyclare Drive, Bryanston, Johannesburg, 2191</div>
                             </div>
                         </li>
-                        <li className="flex border border-white border-opacity-10 px-5 py-4 space-x-4">
+                        <li className="flex border border-white/10 px-5 py-4 space-x-4">
                             <Image src={location} alt="location" />
                             <div>
-                                <div className="text-opacity-60 text-white mb-1">
+                                <div className="text-white/60 mb-1">
                                     Address - Georgia
                                 </div>
                                 <div>16 Ateni Street, Tbilisi, Tbilisi, GE, 0179</div>
@@ -75,19 +75,22 @@ export function Footer() {
                     </ol>
                 </div>
             </div>
-            <div className="py-8 border-t border-t-white border-opacity-20 flex flex-col gap-4 md:flex-row justify-between">
-                <span>Copyright © Bluebird Technologies 2026 | All rights reserved</span>
+            <div className="py-8 border-t border-t-white/20 flex flex-col gap-4 md:flex-row justify-between">
+                <span>
+                    Copyright © Bluebird Technologies {new Date().getFullYear()} | All rights
+                    reserved
+                </span>
                 <div className="flex items-center gap-3">
                     <Link
                         href={`/privacy-policy`}
-                        className="hover:text-opacity-100 text-white text-opacity-60"
+                        className="text-white/60 hover:text-white"
                     >
                         Privacy Policy
                     </Link>
                     |
                     <Link
                         href={`/terms-of-service`}
-                        className="hover:text-opacity-100 text-white text-opacity-60"
+                        className="text-white/60 hover:text-white"
                     >
                         Terms of Service
                     </Link>

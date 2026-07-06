@@ -1,6 +1,6 @@
 import './globals.css'
 
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Montserrat, Nunito_Sans } from 'next/font/google'
 import Image from 'next/image'
 import Script from 'next/script'
@@ -27,11 +27,15 @@ const title = 'Bluebird Technologies'
 const description =
     'Bluebird Technologies is a senior software engineering team building web, mobile, and backend platforms. AI-assisted delivery on battle-tested production foundations - quality software, faster and more cost-effectively.'
 
+export const viewport: Viewport = {
+    width: 'device-width',
+    initialScale: 1,
+}
+
 export const metadata: Metadata = {
-    metadataBase: process.env.NODE_ENV === 'production' ? null : new URL('http://localhost:3000'),
+    metadataBase: new URL('https://bluebird.tech'),
     description,
     title,
-    viewport: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no',
     twitter: {
         description,
         title,
@@ -88,22 +92,22 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     {children}
                     <Footer />
                 </main>
+
+                {/* Fade script */}
+                <Script src="/fade-script.js" />
+
+                {/* Google Analytics */}
+                <Script async src="https://www.googletagmanager.com/gtag/js?id=G-TGB645J9J0" />
+                <Script id="google-analytics">
+                    {`
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag(){dataLayer.push(arguments);}
+                        gtag('js', new Date());
+
+                        gtag('config', 'G-TGB645J9J0');
+                    `}
+                </Script>
             </body>
-
-            {/* Fade script */}
-            <Script src={`/fade-script.js`} />
-
-            {/* Google Analytics */}
-            <Script async src="https://www.googletagmanager.com/gtag/js?id=G-TGB645J9J0" />
-            <Script id="google-analytics">
-                {`
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);}
-                    gtag('js', new Date());
-            
-                    gtag('config', 'G-TGB645J9J0');
-                `}
-            </Script>
         </html>
     )
 }

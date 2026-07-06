@@ -79,7 +79,7 @@ export function ClientTestimonials() {
                                     <div className="text-lg font-bold lg:pt-0 lg:pb-0 pt-4 pb-1">
                                         {block.person}
                                     </div>
-                                    <div className="font-light text-white text-opacity-50">
+                                    <div className="font-light text-white/50">
                                         {block.title}
                                     </div>
                                 </div>

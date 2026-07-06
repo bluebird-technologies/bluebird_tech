@@ -1,6 +1,29 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@theme {
+  --color-primary: #0c1534;
+  --color-secondary: #f3883c;
+
+  --breakpoint-huge: 2200px;
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
 
 html {
     @apply scroll-smooth;
@@ -17,35 +40,35 @@ body {
  * Buttons.
  */
 .btn-primary {
-    @apply border border-white border-opacity-20 bg-secondary;
+    @apply border border-white/20 bg-secondary;
 }
 .btn-primary:active {
-    @apply bg-opacity-80;
+    @apply bg-secondary/80;
 }
 
 .btn-secondary {
-    @apply border border-white border-opacity-20 bg-white bg-opacity-5;
+    @apply border border-white/20 bg-white/5;
 }
 .btn-secondary:hover {
-    @apply bg-opacity-10;
+    @apply bg-white/10;
 }
 .btn-secondary:focus-visible {
     @apply border-transparent;
 }
 .btn-secondary:active {
-    @apply bg-opacity-20;
+    @apply bg-white/20;
 }
 
 .btn-tertiary {
 }
 .btn-tertiary:hover {
-    @apply bg-black bg-opacity-10;
+    @apply bg-black/10;
 }
 .btn-tertiary:focus-visible {
     @apply border-transparent;
 }
 .btn-tertiary:active {
-    @apply bg-black bg-opacity-20;
+    @apply bg-black/20;
 }
 
 .btn-tertiary,
@@ -62,14 +85,14 @@ body {
 .btn-tertiary:focus-visible,
 .btn-secondary:focus-visible,
 .btn-primary:focus-visible {
-    @apply outline outline-1 outline-white outline-offset-1 rounded-sm;
+    @apply outline-solid outline-1 outline-white outline-offset-1 rounded-xs;
 }
 
 /* .container {
     @apply px-5;
 } */
 .container {
-    @apply w-full max-w-[90%] xl:max-w-[80%] 2xl:max-w-screen-xl;
+    @apply w-full max-w-[90%] xl:max-w-[80%] 2xl:max-w-(--breakpoint-xl);
 }
 
 /**
@@ -85,7 +108,7 @@ body {
  * Generic card
  */
 .card {
-    @apply border border-white border-opacity-10 backdrop-blur-md bg-primary bg-opacity-40;
+    @apply border border-white/10 backdrop-blur-md bg-primary/40;
 }
 
 h1 {
@@ -99,7 +122,7 @@ h3 {
 }
 
 p {
-    @apply text-base text-white text-opacity-70 tracking-[0.5px] font-light;
+    @apply text-base text-white/70 tracking-[0.5px] font-light;
 }
 
 h1,
@@ -114,10 +137,10 @@ h6 {
 
 textarea,
 input {
-    @apply px-6 py-4 border border-white border-opacity-20 bg-transparent
-        outline-none text-base w-full text-white block
-        focus:border-opacity-50
-        placeholder:text-white placeholder:font-light placeholder:text-opacity-40;
+    @apply px-6 py-4 border border-white/20 bg-transparent
+        outline-hidden text-base w-full text-white block
+        focus:border-white/50
+        placeholder:text-white/40 placeholder:font-light;
 }
 input {
     @apply h-16;

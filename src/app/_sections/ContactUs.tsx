@@ -6,19 +6,24 @@ import contact from '@/images/contact.jpg'
 import check from '@/images/check.svg'
 
 export function ContactUs() {
-    const [isSuccess, setIsSuccess] = useState(false)
+    const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle')
 
     async function onSubmit(event: FormEvent<HTMLFormElement>) {
         event.preventDefault()
 
-        const formData = new FormData(event.target as HTMLFormElement)
+        const formData = new FormData(event.currentTarget)
+        setStatus('submitting')
 
-        await fetch('https://api.web3forms.com/submit', {
-            method: 'POST',
-            body: formData,
-        })
-
-        setIsSuccess(true)
+        try {
+            const response = await fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                body: formData,
+            })
+            if (!response.ok) throw new Error(`Submission failed (${response.status})`)
+            setStatus('success')
+        } catch {
+            setStatus('error')
+        }
     }
     return (
         <section id="contact-us" className="pt-24 lg:pt-32 container">
@@ -26,7 +31,7 @@ export function ContactUs() {
                 <div className="lg:w-3/5 flex flex-col items-start p-5 lg:p-14">
                     <h3 className="pill-heading fade fade-left">Contact Us</h3>
                     <h2 className="pt-5 fade fade-left pb-8">Get in touch today</h2>
-                    {!isSuccess ? (
+                    {status !== 'success' ? (
                         <form
                             className="flex flex-col lg:grid lg:grid-cols-2 gap-4 lg:gap-8 w-full fade fade-left"
                             onSubmit={onSubmit}
@@ -48,13 +53,23 @@ export function ContactUs() {
                                 required
                             />
                             <div className="pt-4">
-                                <button className="btn-primary" type="submit">
-                                    Get in Touch
+                                <button
+                                    className="btn-primary"
+                                    type="submit"
+                                    disabled={status === 'submitting'}
+                                >
+                                    {status === 'submitting' ? 'Sending...' : 'Get in Touch'}
                                 </button>
                             </div>
+                            {status === 'error' && (
+                                <p className="col-span-2 text-sm text-secondary">
+                                    Something went wrong sending your message. Please try again, or
+                                    email us directly at info@bluebird.tech.
+                                </p>
+                            )}
                         </form>
                     ) : (
-                        <div className="border border-white border-opacity-20 p-7 flex space-x-5 bg-white bg-opacity-5">
+                        <div className="border border-white/20 p-7 flex space-x-5 bg-white/5">
                             <Image src={check} alt="check" />
                             <div className="space-y-1">
                                 <div className="text-lg font-bold">Thank you</div>

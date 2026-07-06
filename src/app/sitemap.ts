@@ -44,5 +44,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
             lastModified: new Date(),
             priority: 0.3,
         },
+        {
+            url: 'https://bluebird.tech/terms-of-service',
+            lastModified: new Date(),
+            priority: 0.3,
+        },
     ]
 }

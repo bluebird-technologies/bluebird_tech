@@ -431,7 +431,7 @@ export default function BuildAPlatformPage() {
                                                 className={clsx(
                                                     'h-full w-full card flex flex-col items-center justify-center space-y-4 transition p-4',
                                                     {
-                                                        '!border-secondary bg-white bg-opacity-10':
+                                                        'border-secondary! bg-white/10':
                                                             isActive,
                                                     },
                                                 )}
