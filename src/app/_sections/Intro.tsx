@@ -27,16 +27,17 @@ export function Intro() {
         <>
             <Hero
                 id="intro"
-                subtitle="Bespoke. Excellent. Enduring."
+                subtitle="Bespoke. Fast. Accountable."
                 title={
                     <>
-                        Building <em>Innovative Software</em> with Style and Simplicity
+                        Senior Engineers Building <em>Production-Grade Software</em>, Faster
                     </>
                 }
                 description={
                     <>
-                        Bluebird Technologies provides exclusive consulting, development, and design
-                        resources for you and your team.
+                        Anyone can generate code now. Shipping software a business can rely on still
+                        takes experienced engineers. We use AI tooling to build significantly faster
+                        and more cost-effectively - the speed comes from expertise, not shortcuts.
                     </>
                 }
                 buttons={

@@ -410,7 +410,7 @@ export default function BuildAPlatformPage() {
                     </div>
                 </div>
                 <div className="inline-block">
-                    <h3 className="pill-heading">Build A Plaform</h3>
+                    <h3 className="pill-heading">Build A Platform</h3>
                 </div>
                 <div className="space-y-0 -mt-20">
                     {sections.map((section) => (

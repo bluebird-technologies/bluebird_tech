@@ -15,7 +15,7 @@ const blocks = [
         image: cj,
         title: 'Founder & CEO',
         description:
-            'CJ, an entrepreneurial software engineer, drives our team towards sustainable solutions and positive environments, fostering innovative horizons and driving continuous growth in AI technology across various industries.',
+            'An entrepreneurial software engineer, CJ sets the direction for Bluebird - pairing deep technical experience with a builder’s instinct for what businesses actually need, and leading our adoption of AI-assisted engineering.',
         linkedin: 'https://www.linkedin.com/in/cjvisser/',
         fb: 'https://www.facebook.com/visser.cj',
     },
@@ -24,7 +24,7 @@ const blocks = [
         image: rikus,
         title: 'Chief Architect',
         description:
-            'A seasoned financial software architect, Rikus engineers stability from complexity. Guiding projects with a wealth of experience, he mentors aspiring developers, ensuring compliance, security, and unmatched performance.',
+            'A seasoned financial software architect, Rikus engineers stability from complexity. He guides our projects on compliance, security, and performance, and mentors the engineers who build alongside him.',
         linkedin: 'https://www.linkedin.com/in/rikuswlouw/',
         fb: 'https://www.facebook.com/rikus.louw.984',
     },
@@ -33,7 +33,7 @@ const blocks = [
         image: wester,
         title: 'COO',
         description:
-            "With a foundation as a qualified Industrial Engineer, Wester's expertise is the cornerstone of our operational finesse. He seamlessly navigates internal dynamics and external partnerships, ensuring smooth, synergistic success.",
+            'A qualified Industrial Engineer, Wester runs the operational side of Bluebird - keeping projects on track, partnerships healthy, and the promises we make to clients ones we can keep.',
         insta: 'https://www.instagram.com/wester_visser/',
         fb: 'https://www.facebook.com/wester.visser',
         linkedin: 'https://www.linkedin.com/in/westervisser/',
@@ -43,7 +43,7 @@ const blocks = [
         image: nick,
         title: 'CTO',
         description:
-            'A nomadic explorer fueled by tech and coffee, Nick propels us forward. Leading the charge into new horizons, his passion for cutting-edge solutions and cryptocurrency expertise keeps us at the forefront of innovation.',
+            'A nomadic engineer fueled by tech and coffee, Nick leads our technical direction. His background spans cryptocurrency systems and modern tooling - he evaluates what’s new, keeps what works, and makes sure it holds up in production.',
         linkedin: 'https://www.linkedin.com/in/warpy/',
         fb: 'https://www.facebook.com/nomadzav',
         insta: 'https://www.instagram.com/nomadzav/',

@@ -14,49 +14,49 @@ const CARDS = [
         title: 'App Development',
         icon: app,
         content:
-            'Native or cross-platform — we take the hassle out of mobile development, and deliver beautiful apps quickly and cost effectively.',
+            'Native or cross-platform. Senior engineers on proven mobile foundations, working AI-assisted - beautiful apps delivered in weeks, not quarters.',
     },
     {
         title: 'Web Development',
         icon: web,
         content:
-            'Using modern technologies combined with the latest web standards, we create performant, responsive, sleek, and secure websites.',
+            'Fast, responsive, and secure websites and web apps - built on foundations we bring with us, so hosting, deployment, and security are handled from day one.',
     },
     {
         title: 'Infrastructure Development',
         icon: infrastructure,
         content:
-            'We develop everything from banking solutions to logistic systems and have the server-, database-, and services development experience to tackle any problem.',
+            'From banking systems to logistics platforms. Proper data modelling, secrets management, and monitoring are part of every build - not afterthoughts.',
     },
     {
         title: 'Product Management',
         icon: pm,
         content:
-            'Using Agile methodologies and effective time management we provide accurate expectations and deliver on time.',
+            'Clear scope, honest estimates, and steady communication. We set expectations you can plan a business around, and we deliver on them.',
     },
     {
         title: 'UX/UI Design',
         icon: ux,
         content:
-            'Working with a wide range of designers and employing a multi-iterative approach, we invent powerful brands and provide pixel perfect fine tuning to existing solutions.',
+            'We design interfaces your customers actually understand - from first wireframe to pixel-level polish, iterating with you until it feels right.',
     },
     {
-        title: 'Developer Oursourcing',
+        title: 'Developer Outsourcing',
         icon: outsourcing,
         content:
-            'We draw from our tried and tested developer network to pull together talent that meets your technology needs.',
+            'Need senior hands inside your own team? We place engineers from our vetted network - people who work the way we do and hold the same standards.',
     },
     {
         title: 'API & System Development',
         icon: api,
         content:
-            'We craft robust and efficient APIs that seamlessly integrate diverse software systems, enabling streamlined data exchange and automation.',
+            'We build robust APIs that connect your systems reliably - so data flows where it should and manual work disappears.',
     },
     {
         title: 'AI Development',
         icon: ai,
         content:
-            'Leveraging the latest advancements in AI, we develop intelligent systems using LLMs and other cutting-edge technologies to solve complex problems.',
+            'We build practical AI features that hold up in production - LLM-powered systems with the same engineering discipline as everything else we ship.',
     },
 ]
 
@@ -71,8 +71,9 @@ export function WhatWeDo() {
                     </h2>
                 </div>
                 <p className="h-full flex flex-col justify-end text-left fade fade-right">
-                    We offer exclusive consulting, development and design resources for some of the
-                    world’s most innovative, enduring systems.
+                    We’re the senior team behind some of the world’s most enduring systems. Every
+                    project starts on foundations we’ve already proven in production - deployment
+                    pipelines, security, monitoring, and proper data modelling from day one.
                 </p>
             </div>
             <div className="pt-12 lg:pt-32 flex flex-col md:flex-row flex-wrap justify-center">

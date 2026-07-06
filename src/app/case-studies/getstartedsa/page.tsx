@@ -27,9 +27,9 @@ const caseStudy: CaseStudy = {
         heading: <>Zero interest micro loan payment platform</>,
         description: (
             <>
-                Getstarted approached us with the idea of a micro loan payment platform. We assisted
-                in the creation of wireframes and designs, which in turn lead to the full
-                development of the platform. A full cycle developement approach was implemented, and
+                GetStarted approached us with the idea of a micro loan payment platform. We
+                assisted in the creation of wireframes and designs, which in turn led to the full
+                development of the platform. A full cycle development approach was implemented, and
                 the platform was built in 2 months post design phase.
             </>
         ),
@@ -46,9 +46,9 @@ const caseStudy: CaseStudy = {
     challenge: {
         concept: (
             <>
-                A platform through which individuals can seamlessly apply and aquire a micro loan
-                while ensuring a thorough credit check process to maintain a high quality applicant
-                level.
+                A platform through which individuals can seamlessly apply for and acquire a micro
+                loan, with a thorough credit check process to maintain a high quality applicant
+                pool.
             </>
         ),
         gap: (
@@ -59,8 +59,8 @@ const caseStudy: CaseStudy = {
         ),
         problem: (
             <>
-                Little to no quality micro loans companies operate within the South African market
-                which offer non existing interest rates.
+                Few quality micro loan companies operate within the South African market, and
+                fewer still offer zero interest rates.
             </>
         ),
         image: challenge,
@@ -68,8 +68,8 @@ const caseStudy: CaseStudy = {
     approach: {
         whatWeNeededToKnow: [
             <>
-                We had to know what would ensure a thorough credit checks process in order to ensure
-                a high quality application pool and returns.
+                We had to know what would ensure a thorough credit check process, in order to
+                maintain a high quality application pool and returns.
             </>,
             <>
                 The user journey would have to be identified, together with what steps need to be
@@ -83,18 +83,17 @@ const caseStudy: CaseStudy = {
         ],
         howWeUncoveredThisInformation: [
             <>
-                We implemented a three step credit check consiting of a warm body check, ID number
-                credit check, and a profability check by means of statement upload through means of
-                statement upload and parsing thereof.
+                We implemented a three step credit check consisting of a warm body check, an ID
+                number credit check, and a profitability check by means of statement upload and
+                parsing.
             </>,
             <>
                 We analysed and improved existing client wireframes & designs, and translated them
                 into a user tested front end screen journey.
             </>,
             <>
-                API docs from integrations partners were inspected and correlating API{"'"}s were
-                implemented in a effective manner into the user journey that mapped was out in the
-                aforementioned step.
+                API docs from integration partners were inspected, and the corresponding APIs were
+                implemented into the user journey mapped out in the previous step.
             </>,
         ],
         image: approach,
@@ -123,14 +122,11 @@ const caseStudy: CaseStudy = {
         heading: '1000 recurring users within 2 months of launch',
         list: [
             <>
-                A very user-friendly zero interest micro loan platform, with high customer return
+                A very user-friendly zero interest micro loan platform, with a high customer return
                 rate
             </>,
             <>An integrated and automated chat service for customer support</>,
-            <>
-                A interactive application process with security checks and OTP{"'"}s sent to ensure
-                security
-            </>,
+            <>An interactive application process secured with identity checks and OTPs</>,
         ],
     },
 }

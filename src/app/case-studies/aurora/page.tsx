@@ -73,7 +73,7 @@ const caseStudy: CaseStudy = {
             </>,
             <>
                 The project we took over had an obscure implementation, constructed and implemented
-                by certain data scientists with whom we had no contact with.
+                by data scientists with whom we had no contact.
             </>,
             <>
                 The most complex part of the initial product was how the App’s questions translated
