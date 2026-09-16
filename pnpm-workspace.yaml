@@ -1,0 +1,5 @@
+allowBuilds:
+  # Required by next/image optimization (native binaries)
+  sharp: true
+  # Native resolver used by eslint-config-next's import resolver
+  unrs-resolver: true

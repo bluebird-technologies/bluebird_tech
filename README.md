@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# bluebird.tech
 
-## Getting Started
+Marketing site for [Bluebird Technologies](https://bluebird.tech), built with [Next.js](https://nextjs.org/) (App Router), React, and [Tailwind CSS v4](https://tailwindcss.com/). All pages are statically prerendered.
 
-First, run the development server:
+## Development
+
+Requires Node 24 (see `.nvmrc`) and [pnpm](https://pnpm.io/) (version pinned via the `packageManager` field — any recent pnpm will auto-switch to it).
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
+pnpm dev          # dev server on http://localhost:3000
+pnpm build        # production build
+pnpm start        # serve the production build
+pnpm lint         # eslint
+pnpm format       # prettier
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Structure
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- `src/app/` — routes (App Router). Homepage sections live in `src/app/_sections/`, header/footer in `src/app/_header/` and `src/app/_footer/`.
+- `src/components/` — shared components (hero, carousel, modal).
+- `src/images/` — statically imported images.
+- `src/app/globals.css` — global styles and the Tailwind theme (`@theme` block defines the `primary`/`secondary` brand colors).
+- `public/fade-script.js` — IntersectionObserver-based scroll fade-in animations (`.fade` elements).
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The contact form posts to [Web3Forms](https://web3forms.com/).
 
-## Learn More
+## Deployment (Netlify)
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Configured via `netlify.toml` using the official Next.js runtime (`@netlify/plugin-nextjs`) — Netlify installs the plugin automatically. Create a new Netlify site from this repository and the defaults will work; no environment variables are required.
